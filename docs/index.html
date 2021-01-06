@@ -90,8 +90,10 @@
         </ul>
         We're also taking idea submissions! 📨
         <form
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf0DQThVyIjpGi8zjRWTg9ZzLtOpkD5CAkvP61uGyd6W_fhyQ/formResponse"
+            id="ideas"
+            action=""
             method="post">
+            <noscript>Sorry, Without Javascript we cant prevent spam, so the form will not work.</noscript>
             <textarea name="entry.2062559402" id="" placeholder="Your Idea..."></textarea>
             <textarea name="entry.1058280427" id="" placeholder="Contact Information"></textarea>
             <input type="submit" value="Submit">
@@ -104,8 +106,9 @@
         <p>Interested in becoming a commercial sponsor? Please email <a
                 href="mailto:java@luckydip.club">java@luckydip.club</a>.</p>
         <form
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwLTzSS2tOx8FkE-ZR5DUNyt4FSc1YoaJOFj5y43hQAcBH_A/formResponse"
+            id="signup"
             method="POST" class="center">
+            <noscript>Sorry, Without Javascript we cant prevent spam, so the form will not work.</noscript>
             <h2>I would like to..</h2>
             <div>
                 <input type="checkbox" name="entry.640491309" id="donate">
@@ -391,6 +394,9 @@
         }
         document.querySelector('.emojis').addEventListener('click', randomEmojis)
         console.log(emojis)
+                            document.querySelector('#signup').setAttribute('action', 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwLTzSS2tOx8FkE-ZR5DUNyt4FSc1YoaJOFj5y43hQAcBH_A/formResponse')
+                            document.querySelector('#ideas').setAttribute('action', 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSf0DQThVyIjpGi8zjRWTg9ZzLtOpkD5CAkvP61uGyd6W_fhyQ/formResponse')
+                        
     </script>
 </body>
 
