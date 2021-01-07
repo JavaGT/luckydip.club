@@ -31,7 +31,44 @@
         </div>
     </div>
     <div class="content">
-
+        <section class="future">
+            <div>
+                <span class="est">$100</span>
+                <span class="title">baked goods</span>
+            </div>
+            <div>
+                <span class="est">$???</span>
+                <span class="title">Live music</span>
+            </div>
+            <div>
+                <span class="est">$???</span>
+                <span class="title">community gardens</span>
+            </div>
+            <div>
+                <span class="est">$???</span>
+                <span class="title">Scavanger hunt</span>
+            </div>
+            <div>
+                <span class="est">$???</span>
+                <span class="title">Big Ice Cream giveaway</span>
+            </div>
+            <div>
+                <span class="est">$???</span>
+                <span class="title">Artist installations</span>
+            </div>
+            <div>
+                <span class="est">$???</span>
+                <span class="title">Host creative market</span>
+            </div>
+            <div>
+                <span class="est">$???</span>
+                <span class="title">Public BBQ</span>
+            </div>
+            <div>
+                <span class="est">$???</span>
+                <span class="title">Collaberation with Lions Club</span>
+            </div>
+        </section>
         <section>
             <h1 class="small" id="learn">Monthly Awesome</h1>
             <p>With your support we make awesome things happen for everyday
@@ -178,6 +215,30 @@
         </footer>
     </div>
     <style>
+        .future {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .future > div {
+            flex-grow: 1;
+            background-color: rgba(0, 145, 24, 0.2);
+            padding: 0.5em;
+            margin: 0.5em;
+            min-height: 3em;    
+            min-width: 10em;
+            max-width: 20em;
+            text-align: center;
+            border-radius: 0.5em;
+        }
+        .future > div > * {
+            display: block;
+        }
+        .future .est {
+            font-weight: bold;
+        }
+        .future {
+            text-transform: capitalize;
+        }
         a:not(.button),
         a:visited:not(.button) {
             color: rgb(79, 158, 0);
