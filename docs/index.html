@@ -32,39 +32,49 @@
     </div>
     <div class="content">
         <section class="future">
-            <div>
+            <div class="status">
+                <h4>Goal</h4>
+                $1000/Monthly
+                <h4>Progress</h4>
+                <div class="bar">
+                    <div class="fill">
+                        <span class="current">$105</span>
+                    </div>
+                </div>
+            </div>
+            <div class="event">
                 <span class="est">$100</span>
                 <span class="title">baked goods</span>
             </div>
-            <div>
+            <div class="event">
                 <span class="est">$???</span>
                 <span class="title">Live music</span>
             </div>
-            <div>
+            <div class="event">
                 <span class="est">$???</span>
                 <span class="title">community gardens</span>
             </div>
-            <div>
+            <div class="event">
                 <span class="est">$???</span>
                 <span class="title">Scavanger hunt</span>
             </div>
-            <div>
+            <div class="event">
                 <span class="est">$???</span>
                 <span class="title">Big Ice Cream giveaway</span>
             </div>
-            <div>
+            <div class="event">
                 <span class="est">$???</span>
                 <span class="title">Artist installations</span>
             </div>
-            <div>
+            <div class="event">
                 <span class="est">$???</span>
                 <span class="title">Host creative market</span>
             </div>
-            <div>
+            <div class="event">
                 <span class="est">$???</span>
                 <span class="title">Public BBQ</span>
             </div>
-            <div>
+            <div class="event">
                 <span class="est">$???</span>
                 <span class="title">Collaberation with Lions Club</span>
             </div>
@@ -215,11 +225,36 @@
         </footer>
     </div>
     <style>
+        .bar {
+            width: 100%;
+            height: 2em;
+            background-color: rgb(241, 227, 207);
+            border-radius: 0.3em;
+            overflow: hidden;
+        }
+        .fill {
+            width: calc(100% * (105 / 1000));
+            height: 100%;
+            background-color: rgb(99, 233, 157);
+        }
+        .current {
+            float: right;
+            margin-right: 0.3em;
+            line-height: 2em;
+            font-weight: bolder;
+        }
         .future {
             display: flex;
             flex-wrap: wrap;
         }
-        .future > div {
+        .future .status {
+            display: block;
+            width: 100%;
+
+            padding: 0.5em;
+            margin: 0.5em;
+        }
+        .future > .event {
             flex-grow: 1;
             background-color: rgba(0, 145, 24, 0.2);
             padding: 0.5em;
@@ -229,15 +264,15 @@
             max-width: 20em;
             text-align: center;
             border-radius: 0.5em;
+            text-transform: capitalize;
         }
-        .future > div > * {
+        .future > .event > * {
             display: block;
         }
         .future .est {
             font-weight: bold;
         }
         .future {
-            text-transform: capitalize;
         }
         a:not(.button),
         a:visited:not(.button) {
